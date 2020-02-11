@@ -1,0 +1,22 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+	name: product-api-deployment
+spec:
+	selector:
+		matchLabels:
+			app: product-api-pod
+	template:
+		metadata:
+			labels:
+				app: product-api-pod
+		spec:
+			containers:
+			- name: product-api-container
+			image: pwccontainerregistry.azurecr.io/productapi:dev
+			resources:
+				limits:
+					memory: "128Mi"
+					cpu: "500m"
+			ports:
+			- containerPort: 80
