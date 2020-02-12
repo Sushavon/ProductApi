@@ -11,12 +11,12 @@ resources:
 variables:
 
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '15f6ee9d-9a5c-4189-871b-6abeab43d086'
+  dockerRegistryServiceConnection: 'eebb0886-3dfb-4101-80fe-5da90b81268f'
   imageRepository: 'sushavonproductapi'
   containerRegistry: 'pwccontainerregistry.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
-  imagePullSecret: 'pwccontainerregistry78169a36-auth'
+  imagePullSecret: 'pwccontainerregistry2002f9d7-auth'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -53,7 +53,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    environment: 'SushavonProductApi.default'
+    environment: 'SushavonProductApi-7935.default'
     strategy:
       runOnce:
         deploy:

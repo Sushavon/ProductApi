@@ -13,4 +13,4 @@ spec:
         - name: sushavonproductapi 
           image: pwccontainerregistry.azurecr.io/sushavonproductapi
           ports:
-          - containerPort: 443
+          - containerPort: 80
