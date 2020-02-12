@@ -35,7 +35,7 @@ namespace Product.Api.Controllers
                 Name = "Paracetamol",
                 Price = 1.00
             };
-
+            products.Add(product);
             product = new Product
             {
                 Id = 2,
