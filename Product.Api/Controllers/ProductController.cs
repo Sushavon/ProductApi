@@ -21,6 +21,7 @@ namespace Product.Api.Controllers
         [HttpGet]
         public IEnumerable<Product> Get()
         {
+
             return GetDummyProducts();
         }
 
