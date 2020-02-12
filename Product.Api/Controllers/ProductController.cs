@@ -36,6 +36,13 @@ namespace Product.Api.Controllers
                 Price = 1.00
             };
 
+            product = new Product
+            {
+                Id = 2,
+                Name = "Calpol",
+                Price = 1.00
+            };
+
             products.Add(product);
             return products;
         }
